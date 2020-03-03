@@ -12,8 +12,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectKBest, chi2
 from sklearn.model_selection import train_test_split
 import torch
-from gensim.models import Word2Vec
-from gensim.models.word2vec import LineSentence
+
 
 # --------------------------------------------- #
 #              Raw data (read only)
