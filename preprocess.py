@@ -22,7 +22,7 @@ EMOJI_DATA_PATH = 'dataset/emoji.data'
 TRAIN_DATA_PATH = 'dataset/train.data'
 TRAIN_SOLUTION_PATH = 'dataset/train.solution'
 TEST_DATA_PATH = 'dataset/test.data'
-PRETRAINED_EMBEDDINGS_PATH = 'dataset/sgns.weibo.bigram'
+PRETRAINED_EMBEDDINGS_PATH = 'dataset/embeddings.pretrained'
 
 
 def _check_raw_data_existence(file):

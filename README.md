@@ -30,7 +30,11 @@ directory under the root of this project and unzip `raw/dataset.zip` into it.
 
 You should also download pretrained word embeddings from
 `https://github.com/Embedding/Chinese-Word-Vectors`
-and unzip it into the `dataset` directory if you want to train a model by cnn.
+and unzip it into the `dataset` directory as `embeddings.pretrained` if you
+want to train a model by cnn.
+
+Maybe in the future I will provide `bootstrap` script to help you complete
+those preparation works once for all.
 
 ## Methods
 
