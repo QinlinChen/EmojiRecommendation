@@ -54,7 +54,7 @@ based on the train dataset by
 
 Learn more usages by `python nb.py -h`. Here is an overview:
 
-    python nb.py [-h] [-a ALPHA] [-f FOLD] [-r RESULT] {val,cv,pred}
+    python nb.py [-h] [-a ALPHA] [-f FOLD] [-o OUTPUT] {val,cv,pred}
 
 ### OvO Linear SVM
 You can see the validation results of linear svm
@@ -64,17 +64,17 @@ based on the train dataset by
 
 Learn more usage by `python lsvm.py -h`. Here is an overview:
 
-    python lsvm.py [-h] [-c C] [-f FOLD] [-r RESULT] [-v] {val,cv,pred}
+    python lsvm.py [-h] [-c C] [-f FOLD] [-o OUTPUT] [-v] {val,cv,pred}
 
 ### CNN
 You can train the model with default parameters by
 
-    python cnn.py train --name NAME
+    python cnn.py train -n NAME
 
 and the model will be save as `model/NAME.pt`.
 After training, you can use
 
-    python cnn.py test --name NAME --result RESULT
+    python cnn.py test -n NAME -o OUTPUT
 
 to predict results for test dataset by model `model/NAME.pt` and the results
 will be output to `result/RESULT`.
@@ -83,7 +83,7 @@ Learn more usage by `python lsvm.py -h`. Here is an overview:
 
     python cnn.py [-h] [-n NAME] [-d DROPOUT] [-k KERNEL_NUM]
               [-s KERNEL_SIZES [KERNEL_SIZES ...]] [-e EPOCH] [-b BATCH]
-              [-l LR] [-r RESULT]
+              [-l LR] [-o OUTPUT]
               {train,test}
 
 The default values for the arguments are listed below:
